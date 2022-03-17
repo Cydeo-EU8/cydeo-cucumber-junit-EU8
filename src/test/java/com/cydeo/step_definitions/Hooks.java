@@ -19,6 +19,7 @@ public class Hooks {
     @After
     public void teardownScenario(){
         System.out.println("====Closing browser using cucumber @After");
+        System.out.println("====Scenario ended/ Take screenshot if failed!");
     }
 
 
