@@ -41,7 +41,7 @@ public class Wiki_StepDefinitions {
 
         Assert.assertTrue(wikiSearchPage.mainHeader.isDisplayed());
 
-        Assert.assertTrue(wikiSearchPage.mainHeader.getText().equals("Steve Jobs"));
+        Assert.assertTrue(wikiSearchPage.mainHeader.getText().equals(string));
 
 
     }
