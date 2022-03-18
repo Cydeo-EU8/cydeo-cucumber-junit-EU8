@@ -36,4 +36,10 @@ public class Wiki_StepDefinitions {
 
     }
 
+    @Then("User sees Steve Jobs is in the main header")
+    public void userSeesSteveJobsIsInTheMainHeader() {
+
+
+
+    }
 }
