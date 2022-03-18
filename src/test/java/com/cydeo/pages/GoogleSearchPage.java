@@ -17,6 +17,4 @@ public class GoogleSearchPage {
     @FindBy(name = "q")
     public WebElement searchBox;
 
-    //break until 10.07am cst
-
 }
