@@ -19,5 +19,6 @@ Feature: Wikipedia search functionality and verifications
     When User types "Bill Gates" in the wiki search box
     And User clicks wiki search button
     Then User sees "Bill Gates" is in the wiki title
+    Then User sees "Steve Jobs" is in the main header
 
     Examples: search values we are going to be using in this scenario is as below
