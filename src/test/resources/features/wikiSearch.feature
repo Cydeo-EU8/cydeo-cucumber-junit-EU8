@@ -34,7 +34,7 @@ Feature: Wikipedia search functionality and verifications
     @scientists
     Examples:
       | searchValue  | expectedTitle | expectedMainHeader |
-      | Marie Curie  | Marie Curie   | Marie Curie        |
+      | Marie Curie  |    | Marie Curie        |
       | Lady Gaga    | Lady Gaga     | Lady Gaga          |
       | Kate Winslet | Kate Winslet  | Kate Winslet       |
 
