@@ -15,7 +15,15 @@ public class BasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy()
+    @FindBy(xpath = "//button[.='View all orders']")
     public WebElement viewAllOrders;
+
+    @FindBy(xpath = "//button[.='View all products']")
+    public WebElement viewAllProducts;
+
+    @FindBy(xpath = "//button[.='Order']")
+    public WebElement order;
+
+
 
 }
