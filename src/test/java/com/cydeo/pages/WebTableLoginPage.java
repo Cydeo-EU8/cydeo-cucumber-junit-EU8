@@ -44,5 +44,9 @@ public class WebTableLoginPage {
         loginButton.click();
     }
 
+    public void loginWithConfig(){
+        inputUsername.sendKeys();
+    }
+
 
 }
