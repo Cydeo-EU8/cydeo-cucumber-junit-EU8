@@ -54,6 +54,4 @@ public class WebTableLoginPage {
         inputPassword.sendKeys(ConfigurationReader.getProperty("web.table.pw"));
         loginButton.click();
     }
-
-
 }
