@@ -5,7 +5,7 @@ Feature: Web table user order feature
   Scenario: User should be able to place order and order seen in web table
     Given user is already logged in and on order page
     When user selects product type "Familybea"
-    And user enters quantity "2"
+    And user enters quantity 2
     And user enters costumer name "Sherlock Holmes"
     And user enters street "221B Baker Street"
     And user enters city "London"
