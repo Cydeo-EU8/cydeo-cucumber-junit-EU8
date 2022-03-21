@@ -5,6 +5,7 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -34,8 +35,11 @@ public class DataTable_StepDefinitions {
     public void user_should_see_below_info_in_month_dropdown(List<String> expectedMonths) {
 
         Select select = new Select(dropdownsPage.monthDropdown);
+
+        //List of all ACTUAL month <options> as a web element
         List<WebElement> actualOptionsAsWebElement = select.getOptions();
 
+        //List of all ACTUAL month <options> as a string
         List<String> actualOptionsAsString= new ArrayList<>();
 
         for (WebElement each : actualOptionsAsWebElement) {
