@@ -17,7 +17,7 @@ public class WebTableLoginPage {
     @FindBy(name = "password")
     public WebElement inputPassword;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//button[.='Login']")
     public WebElement loginButton;
 
 }
