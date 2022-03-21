@@ -1,13 +1,17 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.pages.WebTableLoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Order_StepDefinitions {
 
+    WebTableLoginPage webTableLoginPage = new WebTableLoginPage();
+
     @Given("user is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
+        webTableLoginPage.login();
 
     }
     @When("user selects product type {string}")
