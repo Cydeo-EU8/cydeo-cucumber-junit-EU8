@@ -5,6 +5,7 @@ import com.cydeo.pages.OrderPage;
 import com.cydeo.pages.WebTableLoginPage;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,10 +36,20 @@ public class Order_StepDefinitions {
         select.selectByVisibleText(string);
 
     }
-    @When("user enters quantity {string}")
-    public void user_enters_quantity(String string) {
+//    @When("user enters quantity {string}")
+//    public void user_enters_quantity(String string) {
+//
+//    }
+    @And("user enters quantity {int}")
+    public void userEntersQuantity(int arg0) {
+        //accepting int argument and sending it using sendKeys() method
+        //since sendKeys() method only accepts String, we need to either concat with ""
+        //or send String.valueOf(int);
+        orderPage.inputQuantity.sendKeys(arg0+"");
+        orderPage.inputQuantity.sendKeys(String.valueOf(arg0));
 
     }
+
     @When("user enters costumer name {string}")
     public void user_enters_costumer_name(String string) {
 
@@ -79,5 +90,6 @@ public class Order_StepDefinitions {
     public void user_should_see_in_first_row_of_the_web_table(String string) {
 
     }
+
 
 }
