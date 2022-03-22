@@ -88,12 +88,10 @@ public class Order_StepDefinitions {
 
         for (WebElement each : cardTypes) {
 
-            if (each.getAttribute("value").equals(expectedCardType)){
+            if (each.getAttribute("value").equalsIgnoreCase(expectedCardType)){
                 each.click();
             }
-
         }
-
 
     }
     @When("user enters credit card number {string}")
