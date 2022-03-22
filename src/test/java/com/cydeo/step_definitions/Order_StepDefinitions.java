@@ -2,6 +2,7 @@ package com.cydeo.step_definitions;
 
 import com.cydeo.pages.BasePage;
 import com.cydeo.pages.OrderPage;
+import com.cydeo.pages.ViewAllOrdersPage;
 import com.cydeo.pages.WebTableLoginPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
@@ -21,6 +22,7 @@ public class Order_StepDefinitions {
     WebTableLoginPage webTableLoginPage = new WebTableLoginPage();
     BasePage basePage = new BasePage();
     OrderPage orderPage = new OrderPage();
+    ViewAllOrdersPage viewAllOrdersPage = new ViewAllOrdersPage();
 
     @Given("user is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
