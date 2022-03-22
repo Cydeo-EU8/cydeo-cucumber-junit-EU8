@@ -93,6 +93,12 @@ for given duration
     }
 
 
+    /**
+     * This method will accept a group radio buttons as a List of WebElement.
+     * It will loop through the List, and click to the radio button with provided attributeValue
+     * @param radioButtons
+     * @param attributeValue
+     */
     public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
 
         for (WebElement each : radioButtons) {
