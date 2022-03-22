@@ -10,7 +10,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class Order_StepDefinitions {
 
@@ -58,28 +61,33 @@ public class Order_StepDefinitions {
 
     }
 
-    @When("user enters costumer name {string}")
-    public void user_enters_costumer_name(String string) {
-
+    @When("user enters customer name {string}")
+    public void user_enters_customer_name(String string) {
+        orderPage.inputName.sendKeys(string);
     }
     @When("user enters street {string}")
     public void user_enters_street(String string) {
-
+        orderPage.inputStreet.sendKeys(string);
     }
     @When("user enters city {string}")
     public void user_enters_city(String string) {
-
+        orderPage.inputCity.sendKeys(string);
     }
     @When("user enters state {string}")
     public void user_enters_state(String string) {
-
+        orderPage.inputState.sendKeys(string);
     }
     @When("user enters zipcode {string}")
     public void user_enters_zipcode(String string) {
-
+        orderPage.inputZip.sendKeys(string);
     }
     @When("user selects credit card type {string}")
-    public void user_selects_credit_card_type(String string) {
+    public void user_selects_credit_card_type(String expectedCardType) {
+
+        List<WebElement> cardTypes = orderPage.cardType;
+
+        
+
 
     }
     @When("user enters credit card number {string}")
