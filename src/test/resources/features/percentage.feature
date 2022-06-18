@@ -8,4 +8,5 @@ Feature: Calculate different percentage values
       | 500  | 25  |
       | 1300 | 65  |
       | 2100 | 105 |
+      | 5500 | 275 |
 

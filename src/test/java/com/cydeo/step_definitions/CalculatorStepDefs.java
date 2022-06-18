@@ -37,20 +37,23 @@ public class CalculatorStepDefs {
         Driver.getDriver().get(ConfigurationReader.getProperty("percentage.url"));
     }
     @Then("User should see fallowing calculation results")
-    public void user_should_see_fallowing_calculation_results(Map<Integer,Integer> valuesMap) {
+    public void user_should_see_fallowing_calculation_results(Map<String,String> valuesMap) {
      System.out.println("valuesMap = " + valuesMap);
         PercentageCalculatorPage page = new PercentageCalculatorPage();
         page.percent.sendKeys("5");
         // 500 is key --- value is 25=result
 
-        for(Integer inputKey : valuesMap.keySet()){
+        for(String inputKey : valuesMap.keySet()){
             page.input.clear();
-            page.input.sendKeys(""+inputKey+ Keys.ENTER);
+          //  page.input.sendKeys(""+inputKey+ Keys.ENTER);
+            page.input.sendKeys(inputKey+ Keys.ENTER);
 
             System.out.println("input value = " + inputKey);
             System.out.println("Expected value of %5 is = "+valuesMap.get(inputKey));
 
-            System.out.println("Actual value from webpage = "+page.result.getText());
+            System.out.println("Actual value from webpage = "+page.result.getAttribute("value")); // returns String
+         //   Assert.assertEquals(valuesMap.get(inputKey),Integer.valueOf(page.result.getAttribute("value")));
+            Assert.assertEquals(valuesMap.get(inputKey),page.result.getAttribute("value"));
 
         }
     }
