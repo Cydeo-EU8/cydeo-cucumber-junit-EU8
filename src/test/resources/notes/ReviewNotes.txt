@@ -1,0 +1,19 @@
+June 18th 2022
+
+Gherkin Language
+Given --> is used for precondition
+        user is on the home page
+        user is a frequent flier
+        user is log in as instructor
+
+When/And ---> steps/actions
+        user enters email
+        user searches for bla bla ..
+
+Then ----> verification steps
+        user should see search results
+        the meeting should be scheduled
+
+DryRun = true/ false : true-- not running the test actually just getting snippets
+
+Tags: to run specific scenario or scenarios
