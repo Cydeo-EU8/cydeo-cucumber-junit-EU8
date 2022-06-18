@@ -17,3 +17,6 @@ Then ----> verification steps
 DryRun = true/ false : true-- not running the test actually just getting snippets
 
 Tags: to run specific scenario or scenarios
+@dice or @test : all the scenarios with @dice or @test tags will run
+@dice and @smoke : both tags have to be there
+@regression and not @dice
