@@ -15,7 +15,7 @@ Feature: Calculator Tests
     And User clicks "5" on calculator
     Then result "4" should be displayed
 
-  @wip
+
   Scenario Outline: Testing whole functionality
     When User clicks "<button1>" on calculator
     And User clicks "<operator>" on calculator
