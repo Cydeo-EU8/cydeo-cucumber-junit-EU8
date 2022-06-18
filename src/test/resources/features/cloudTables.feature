@@ -9,4 +9,4 @@ Feature: DDT example with CloudTables
     And User clicks on create button
     Then User should be able to find person at the search box
 
-# change this scenario into DDT format
+# change this scenario into DDT format---> turn it into scenario outline
