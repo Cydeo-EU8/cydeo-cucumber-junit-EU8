@@ -28,4 +28,5 @@ Assert.assertEquals(actual,expected,"message")
 Junit
 Assert.assertEquals("message",expected,actual)
 
-
+Background Cucumber Framework
+If you have same precondition for scenarios in the SAME Feature File
