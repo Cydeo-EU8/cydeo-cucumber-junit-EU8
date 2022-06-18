@@ -1,6 +1,5 @@
 Feature: Calculate different percentage values
 
-  @wip
   Scenario: User calculates %5 results
     Given User is on percentage calculator page
     Then User should see fallowing calculation results
