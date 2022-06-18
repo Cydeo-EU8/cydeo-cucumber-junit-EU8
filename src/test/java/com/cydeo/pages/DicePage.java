@@ -13,4 +13,12 @@ public class DicePage {
     @FindBy(id = "typeaheadInput")
     public WebElement keywordBox;
 
+    @FindBy(id = "google-location-search")
+    public WebElement zipCodeBox;
+
+    @FindBy(id = "totalJobCount")
+    public WebElement totalJobs;
+
+
+
 }
