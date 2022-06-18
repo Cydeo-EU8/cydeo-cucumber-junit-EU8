@@ -20,3 +20,12 @@ Tags: to run specific scenario or scenarios
 @dice or @test : all the scenarios with @dice or @test tags will run
 @dice and @smoke : both tags have to be there
 @regression and not @dice
+
+Parameterized step definitions
+
+TestNG vs
+Assert.assertEquals(actual,expected,"message")
+Junit
+Assert.assertEquals("message",expected,actual)
+
+
