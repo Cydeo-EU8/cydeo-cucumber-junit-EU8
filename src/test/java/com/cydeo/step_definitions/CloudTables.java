@@ -52,7 +52,7 @@ public class CloudTables {
         if(situation.equals("positive")){
         Assert.assertTrue(cloudTablePage.getNewPerson(firstName,lastName).isDisplayed());}
         else if(situation.equals("negative")){
-            Assert.assertFalse(cloudTablePage.getNewPerson(firstName,lastName).isDisplayed());}
+          Assert.assertTrue(cloudTablePage.errorMessage.isDisplayed());}
 
     }
 

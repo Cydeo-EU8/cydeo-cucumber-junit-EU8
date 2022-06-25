@@ -38,6 +38,9 @@ public class CloudTablePage {
     @FindBy(xpath = "//button[@class='btn']")
     public WebElement confirmDelete;
 
+    @FindBy(xpath = "//td[.='No matching records found']")
+    public WebElement errorMessage;
+
     public WebElement getNewPerson(String firstName, String lastName){
      return Driver.getDriver().findElement(By.xpath("//td[.='"+firstName+" "+lastName+"']"));
     }
