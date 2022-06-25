@@ -15,7 +15,7 @@ Feature: Google search functionality
     Given user is on Google search page
     When user types "apple" and clicks enter
     Then user sees "apple" in the google title
-
+  @wip
   Scenario: Data Driven Testing Format preparation
     Given user is on Google search page
     When user types "capital of Turkey" and clicks enter
