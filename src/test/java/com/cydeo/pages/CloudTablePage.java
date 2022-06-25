@@ -32,6 +32,12 @@ public class CloudTablePage {
     @FindBy(xpath = "//input[@type='search']")
     public WebElement searchBox;
 
+    @FindBy(xpath = "//button/span[.='Delete']")
+    public WebElement deletePerson;
+
+    @FindBy(xpath = "//button[@class='btn']")
+    public WebElement confirmDelete;
+
     public WebElement getNewPerson(String firstName, String lastName){
      return Driver.getDriver().findElement(By.xpath("//td[.='"+firstName+" "+lastName+"']"));
     }
