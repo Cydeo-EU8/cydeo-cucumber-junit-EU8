@@ -1,5 +1,5 @@
 Feature: Calculate different percentage values
-
+  @parallel
   Scenario: User calculates %5 results
     Given User is on percentage calculator page
     Then User should see fallowing calculation results
