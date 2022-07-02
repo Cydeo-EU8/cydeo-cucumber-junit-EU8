@@ -1,5 +1,5 @@
 Feature: DDT example with CloudTables
-
+  @smoke
   Scenario: Adding one person
     Given User is on cloudTables homepage
     When User clicks on New button
